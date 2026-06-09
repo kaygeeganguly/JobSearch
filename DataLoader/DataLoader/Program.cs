@@ -13,6 +13,7 @@ namespace AzureSearchBackupRestore
         private static string TargetSearchServiceApiKey = ConfigurationManager.AppSettings["TargetSearchServiceApiKey"];
         private static HttpClient HttpClient;
         private static Uri ServiceUri;
+        private static string SchemaDataPath = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", "NYCJobsWeb", "Schema_and_Data"));
 
         static void Main(string[] args)
         {
@@ -75,7 +76,12 @@ namespace AzureSearchBackupRestore
         {
             // Use the schema file to create a copy of this index
             // I like using REST here since I can just take the response as-is
-            string json = File.ReadAllText("..\\..\\..\\..\\NYCJobsWeb\\Schema_and_Data\\" + IndexName + ".schema");
+            if (!Directory.Exists(SchemaDataPath))
+            {
+                throw new DirectoryNotFoundException("Schema and data folder not found at: " + SchemaDataPath);
+            }
+            string schemaPath = Path.Combine(SchemaDataPath, IndexName + ".schema");
+            string json = File.ReadAllText(schemaPath);
             try
             {
                 Uri uri = new Uri(ServiceUri, "/indexes");
@@ -94,7 +100,11 @@ namespace AzureSearchBackupRestore
             // Take JSON file and import this as-is to target index
             try
             {
-                foreach (string fileName in Directory.GetFiles("..\\..\\..\\..\\NYCJobsWeb\\Schema_and_Data\\", IndexName + "*.json"))
+                if (!Directory.Exists(SchemaDataPath))
+                {
+                    throw new DirectoryNotFoundException("Schema and data folder not found at: " + SchemaDataPath);
+                }
+                foreach (string fileName in Directory.GetFiles(SchemaDataPath, IndexName + "*.json"))
                 {
                     Console.WriteLine("Uploading documents from file {0}", fileName);
                     string json = File.ReadAllText(fileName);
@@ -102,6 +112,7 @@ namespace AzureSearchBackupRestore
                     HttpResponseMessage response = AzureSearchHelper.SendSearchRequest(HttpClient, HttpMethod.Post, uri, json);
                     response.EnsureSuccessStatusCode();
                 }
+
             }
             catch (Exception ex)
             {

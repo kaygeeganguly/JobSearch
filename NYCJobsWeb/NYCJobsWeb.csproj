@@ -7,6 +7,5 @@
 
   <ItemGroup>
     <PackageReference Include="Azure.Search.Documents" Version="11.1.1" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="10.0.0" />
   </ItemGroup>
 </Project>

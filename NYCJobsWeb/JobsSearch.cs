@@ -2,33 +2,30 @@ using Azure;
 using Azure.Search.Documents;
 using Azure.Search.Documents.Indexes;
 using Azure.Search.Documents.Models;
-using System.Configuration;
 
 namespace NYCJobsWeb;
 
 public class JobsSearch
 {
-    private static SearchClient _indexClient;
-    private static string IndexName = "nycjobs";
-    private static SearchClient _indexZipClient;
-    private static string IndexZipCodes = "zipcodes";
+    private readonly SearchClient _indexClient;
+    private readonly SearchClient _indexZipClient;
+    private readonly ILogger<JobsSearch> _logger;
+    private const string IndexName = "nycjobs";
+    private const string IndexZipCodes = "zipcodes";
 
-    public static string errorMessage;
-
-    static JobsSearch()
+    public JobsSearch(IConfiguration configuration, ILogger<JobsSearch> logger)
     {
-        try
-        {
-            string searchendpoint = System.Configuration.ConfigurationManager.AppSettings["Searchendpoint"];
-            string apiKey = System.Configuration.ConfigurationManager.AppSettings["SearchServiceApiKey"];
+        _logger = logger;
+        string searchendpoint = configuration["Searchendpoint"] ?? string.Empty;
+        string apiKey = configuration["SearchServiceApiKey"] ?? string.Empty;
 
-            _indexClient = new SearchIndexClient(new Uri(searchendpoint), new AzureKeyCredential(apiKey)).GetSearchClient(IndexName);
-            _indexZipClient = new SearchIndexClient(new Uri(searchendpoint), new AzureKeyCredential(apiKey)).GetSearchClient(IndexZipCodes);
-        }
-        catch (Exception e)
+        if (string.IsNullOrWhiteSpace(searchendpoint) || string.IsNullOrWhiteSpace(apiKey))
         {
-            errorMessage = e.Message.ToString();
+            throw new InvalidOperationException("Searchendpoint or SearchServiceApiKey is not configured.");
         }
+
+        _indexClient = new SearchIndexClient(new Uri(searchendpoint), new AzureKeyCredential(apiKey)).GetSearchClient(IndexName);
+        _indexZipClient = new SearchIndexClient(new Uri(searchendpoint), new AzureKeyCredential(apiKey)).GetSearchClient(IndexZipCodes);
     }
 
     public SearchResults<SearchDocument> Search(string searchText, string businessTitleFacet, string postingTypeFacet, string salaryRangeFacet,
@@ -101,9 +98,9 @@ public class JobsSearch
         }
         catch (Exception ex)
         {
-            Console.WriteLine("Error querying index: {0}", ex.Message.ToString());
+            _logger.LogError(ex, "Search failed for query '{Query}'", searchText);
+            throw;
         }
-        return null;
     }
 
     public SearchResults<SearchDocument> SearchZip(string zipCode)
@@ -119,9 +116,9 @@ public class JobsSearch
         }
         catch (Exception ex)
         {
-            Console.WriteLine("Error querying index: {0}", ex.Message.ToString());
+            _logger.LogError(ex, "Zip search failed for zip '{ZipCode}'", zipCode);
+            throw;
         }
-        return null;
     }
 
     public SuggestResults<SearchDocument> Suggest(string searchText, bool fuzzy)
@@ -138,9 +135,9 @@ public class JobsSearch
         }
         catch (Exception ex)
         {
-            Console.WriteLine("Error querying index: {0}", ex.Message.ToString());
+            _logger.LogError(ex, "Suggest failed for term '{SearchText}'", searchText);
+            throw;
         }
-        return null;
     }
 
     public SearchDocument LookUp(string id)
@@ -151,9 +148,9 @@ public class JobsSearch
         }
         catch (Exception ex)
         {
-            Console.WriteLine("Error querying index: {0}", ex.Message.ToString());
+            _logger.LogError(ex, "Lookup failed for id '{Id}'", id);
+            throw;
         }
-        return null;
     }
 
     public void AddList(IList<string> list1, List<string> list2)
