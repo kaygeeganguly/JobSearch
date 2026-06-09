@@ -14,14 +14,20 @@
         "generateNewUnitTests": "false",
         "passUnitTests": "true"
       },
-      "status": "pending"
+      "status": "success",
+      "successCriteriaStatus": {
+        "passBuild": "true",
+        "generateNewUnitTests": "false",
+        "passUnitTests": "true"
+      },
+      "taskSummary": "Upgraded NYCJobsWeb and DataLoader to SDK-style net10.0 projects, migrated NYCJobsWeb from ASP.NET MVC 5 to ASP.NET Core hosting model, removed legacy web/packages.config artifacts, and validated with successful dotnet build/test."
     }
   ],
   "metadata": {
     "planName": "upgrade-to-lts",
     "projectName": "JobSearch",
     "language": "dotnet",
-    "createdAt": "2026-06-09T12:32:07.000Z",
+    "createdAt": "2026-06-09T12:32:07Z",
     "version": "1.0"
   }
 }
