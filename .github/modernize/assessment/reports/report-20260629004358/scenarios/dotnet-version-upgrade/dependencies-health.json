@@ -1,0 +1,1422 @@
+{
+  "packageGovernance": {
+    "totalDistinctPackages": 24,
+    "totalVersionDriftInstances": 0,
+    "targetFramework": "net10.0",
+    "packages": [
+      {
+        "name": "Azure.Core",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "",
+        "isCompatible": true,
+        "description": "",
+        "versions": [
+          {
+            "version": "1.4.1",
+            "projects": [
+              "NYCJobsWeb"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": ""
+        }
+      },
+      {
+        "name": "Azure.Search.Documents",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "",
+        "isCompatible": true,
+        "description": "",
+        "versions": [
+          {
+            "version": "11.1.1",
+            "projects": [
+              "NYCJobsWeb"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": ""
+        }
+      },
+      {
+        "name": "BingGeocodingHelper",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "",
+        "isCompatible": true,
+        "description": "",
+        "versions": [
+          {
+            "version": "1.1",
+            "projects": [
+              "NYCJobsWeb"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": ""
+        }
+      },
+      {
+        "name": "bootstrap",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "",
+        "isCompatible": true,
+        "description": "",
+        "versions": [
+          {
+            "version": "3.4.1",
+            "projects": [
+              "NYCJobsWeb"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": ""
+        }
+      },
+      {
+        "name": "jQuery",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "3.7.1",
+        "isCompatible": true,
+        "description": "NuGet package contains security vulnerability",
+        "versions": [
+          {
+            "version": "3.1.1",
+            "projects": [
+              "NYCJobsWeb"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": "3.7.1"
+        }
+      },
+      {
+        "name": "Microsoft.AspNet.Mvc",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "",
+        "isCompatible": true,
+        "description": "NuGet package functionality is included with framework reference",
+        "versions": [
+          {
+            "version": "5.2.2",
+            "projects": [
+              "NYCJobsWeb"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": ""
+        }
+      },
+      {
+        "name": "Microsoft.AspNet.Razor",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "",
+        "isCompatible": true,
+        "description": "NuGet package functionality is included with framework reference",
+        "versions": [
+          {
+            "version": "3.2.2",
+            "projects": [
+              "NYCJobsWeb"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": ""
+        }
+      },
+      {
+        "name": "Microsoft.AspNet.WebPages",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "",
+        "isCompatible": true,
+        "description": "NuGet package functionality is included with framework reference",
+        "versions": [
+          {
+            "version": "3.2.2",
+            "projects": [
+              "NYCJobsWeb"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": ""
+        }
+      },
+      {
+        "name": "Microsoft.Bcl.AsyncInterfaces",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "10.0.9",
+        "isCompatible": true,
+        "description": "NuGet package upgrade is recommended",
+        "versions": [
+          {
+            "version": "1.0.0",
+            "projects": [
+              "NYCJobsWeb"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": "10.0.9"
+        }
+      },
+      {
+        "name": "Microsoft.Rest.ClientRuntime",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "2.3.24",
+        "isCompatible": true,
+        "description": "NuGet package contains security vulnerability",
+        "versions": [
+          {
+            "version": "2.3.20",
+            "projects": [
+              "NYCJobsWeb"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": "2.3.24"
+        }
+      },
+      {
+        "name": "Microsoft.Rest.ClientRuntime.Azure",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "",
+        "isCompatible": false,
+        "description": "NuGet package is deprecated",
+        "versions": [
+          {
+            "version": "3.3.18",
+            "projects": [
+              "NYCJobsWeb"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": ""
+        }
+      },
+      {
+        "name": "Microsoft.Spatial",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "",
+        "isCompatible": true,
+        "description": "",
+        "versions": [
+          {
+            "version": "7.5.3",
+            "projects": [
+              "NYCJobsWeb"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": ""
+        }
+      },
+      {
+        "name": "Microsoft.Web.Infrastructure",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "",
+        "isCompatible": true,
+        "description": "NuGet package functionality is included with framework reference",
+        "versions": [
+          {
+            "version": "1.0.0.0",
+            "projects": [
+              "NYCJobsWeb"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": ""
+        }
+      },
+      {
+        "name": "Modernizr",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "",
+        "isCompatible": true,
+        "description": "",
+        "versions": [
+          {
+            "version": "2.8.3",
+            "projects": [
+              "NYCJobsWeb"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": ""
+        }
+      },
+      {
+        "name": "Newtonsoft.Json",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "13.0.4",
+        "isCompatible": true,
+        "description": "NuGet package upgrade is recommended",
+        "versions": [
+          {
+            "version": "10.0.3",
+            "projects": [
+              "NYCJobsWeb"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": "13.0.4"
+        }
+      },
+      {
+        "name": "System.Buffers",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "",
+        "isCompatible": true,
+        "description": "NuGet package functionality is included with framework reference",
+        "versions": [
+          {
+            "version": "4.5.0",
+            "projects": [
+              "NYCJobsWeb"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": ""
+        }
+      },
+      {
+        "name": "System.Diagnostics.DiagnosticSource",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "10.0.9",
+        "isCompatible": true,
+        "description": "NuGet package upgrade is recommended",
+        "versions": [
+          {
+            "version": "4.6.0",
+            "projects": [
+              "NYCJobsWeb"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": "10.0.9"
+        }
+      },
+      {
+        "name": "System.Memory",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "",
+        "isCompatible": true,
+        "description": "NuGet package functionality is included with framework reference",
+        "versions": [
+          {
+            "version": "4.5.3",
+            "projects": [
+              "NYCJobsWeb"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": ""
+        }
+      },
+      {
+        "name": "System.Numerics.Vectors",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "",
+        "isCompatible": true,
+        "description": "NuGet package functionality is included with framework reference",
+        "versions": [
+          {
+            "version": "4.5.0",
+            "projects": [
+              "NYCJobsWeb"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": ""
+        }
+      },
+      {
+        "name": "System.Runtime.CompilerServices.Unsafe",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "6.1.2",
+        "isCompatible": true,
+        "description": "NuGet package upgrade is recommended",
+        "versions": [
+          {
+            "version": "4.6.0",
+            "projects": [
+              "NYCJobsWeb"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": "6.1.2"
+        }
+      },
+      {
+        "name": "System.Text.Encodings.Web",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "10.0.9",
+        "isCompatible": true,
+        "description": "NuGet package upgrade is recommended",
+        "versions": [
+          {
+            "version": "4.6.0",
+            "projects": [
+              "NYCJobsWeb"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": "10.0.9"
+        }
+      },
+      {
+        "name": "System.Text.Json",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "10.0.9",
+        "isCompatible": true,
+        "description": "NuGet package upgrade is recommended",
+        "versions": [
+          {
+            "version": "4.6.0",
+            "projects": [
+              "NYCJobsWeb"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": "10.0.9"
+        }
+      },
+      {
+        "name": "System.Threading.Tasks.Extensions",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "",
+        "isCompatible": true,
+        "description": "NuGet package functionality is included with framework reference",
+        "versions": [
+          {
+            "version": "4.5.2",
+            "projects": [
+              "NYCJobsWeb"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": ""
+        }
+      },
+      {
+        "name": "System.ValueTuple",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "",
+        "isCompatible": true,
+        "description": "NuGet package functionality is included with framework reference",
+        "versions": [
+          {
+            "version": "4.5.0",
+            "projects": [
+              "NYCJobsWeb"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": ""
+        }
+      }
+    ]
+  },
+  "projects": [
+    {
+      "name": "NYCJobsWeb",
+      "path": "NYCJobsWeb/NYCJobsWeb.csproj",
+      "isSdk": false,
+      "currentFrameworks": [
+        "net472"
+      ],
+      "targetFramework": "net10.0",
+      "dependencies": {
+        "packages": [
+          {
+            "name": "Azure.Core",
+            "version": "1.4.1",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/packages.config"
+              }
+            ],
+            "description": "",
+            "compatibility": "valid",
+            "recommendedVersion": ""
+          },
+          {
+            "name": "Azure.Search.Documents",
+            "version": "11.1.1",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/packages.config"
+              }
+            ],
+            "description": "",
+            "compatibility": "valid",
+            "recommendedVersion": ""
+          },
+          {
+            "name": "BingGeocodingHelper",
+            "version": "1.1",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/packages.config"
+              }
+            ],
+            "description": "",
+            "compatibility": "valid",
+            "recommendedVersion": ""
+          },
+          {
+            "name": "bootstrap",
+            "version": "3.4.1",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/packages.config"
+              }
+            ],
+            "description": "",
+            "compatibility": "valid",
+            "recommendedVersion": ""
+          },
+          {
+            "name": "jQuery",
+            "version": "3.1.1",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/packages.config"
+              }
+            ],
+            "description": "NuGet package contains security vulnerability",
+            "compatibility": "valid",
+            "recommendedVersion": "3.7.1",
+            "upgrade": {
+              "newVersion": "3.7.1"
+            }
+          },
+          {
+            "name": "Microsoft.AspNet.Mvc",
+            "version": "5.2.2",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/packages.config"
+              }
+            ],
+            "description": "NuGet package functionality is included with framework reference",
+            "compatibility": "valid",
+            "recommendedVersion": ""
+          },
+          {
+            "name": "Microsoft.AspNet.Razor",
+            "version": "3.2.2",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/packages.config"
+              }
+            ],
+            "description": "NuGet package functionality is included with framework reference",
+            "compatibility": "valid",
+            "recommendedVersion": ""
+          },
+          {
+            "name": "Microsoft.AspNet.WebPages",
+            "version": "3.2.2",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/packages.config"
+              }
+            ],
+            "description": "NuGet package functionality is included with framework reference",
+            "compatibility": "valid",
+            "recommendedVersion": ""
+          },
+          {
+            "name": "Microsoft.Bcl.AsyncInterfaces",
+            "version": "1.0.0",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/packages.config"
+              }
+            ],
+            "description": "NuGet package upgrade is recommended",
+            "compatibility": "valid",
+            "recommendedVersion": "10.0.9",
+            "upgrade": {
+              "newVersion": "10.0.9"
+            }
+          },
+          {
+            "name": "Microsoft.Rest.ClientRuntime",
+            "version": "2.3.20",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/packages.config"
+              }
+            ],
+            "description": "NuGet package contains security vulnerability",
+            "compatibility": "valid",
+            "recommendedVersion": "2.3.24",
+            "upgrade": {
+              "newVersion": "2.3.24"
+            }
+          },
+          {
+            "name": "Microsoft.Rest.ClientRuntime.Azure",
+            "version": "3.3.18",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/packages.config"
+              }
+            ],
+            "description": "NuGet package is deprecated",
+            "compatibility": "newVersionNeeded",
+            "recommendedVersion": ""
+          },
+          {
+            "name": "Microsoft.Spatial",
+            "version": "7.5.3",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/packages.config"
+              }
+            ],
+            "description": "",
+            "compatibility": "valid",
+            "recommendedVersion": ""
+          },
+          {
+            "name": "Microsoft.Web.Infrastructure",
+            "version": "1.0.0.0",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/packages.config"
+              }
+            ],
+            "description": "NuGet package functionality is included with framework reference",
+            "compatibility": "valid",
+            "recommendedVersion": ""
+          },
+          {
+            "name": "Modernizr",
+            "version": "2.8.3",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/packages.config"
+              }
+            ],
+            "description": "",
+            "compatibility": "valid",
+            "recommendedVersion": ""
+          },
+          {
+            "name": "Newtonsoft.Json",
+            "version": "10.0.3",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/packages.config"
+              }
+            ],
+            "description": "NuGet package upgrade is recommended",
+            "compatibility": "valid",
+            "recommendedVersion": "13.0.4",
+            "upgrade": {
+              "newVersion": "13.0.4"
+            }
+          },
+          {
+            "name": "System.Buffers",
+            "version": "4.5.0",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/packages.config"
+              }
+            ],
+            "description": "NuGet package functionality is included with framework reference",
+            "compatibility": "valid",
+            "recommendedVersion": ""
+          },
+          {
+            "name": "System.Diagnostics.DiagnosticSource",
+            "version": "4.6.0",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/packages.config"
+              }
+            ],
+            "description": "NuGet package upgrade is recommended",
+            "compatibility": "valid",
+            "recommendedVersion": "10.0.9",
+            "upgrade": {
+              "newVersion": "10.0.9"
+            }
+          },
+          {
+            "name": "System.Memory",
+            "version": "4.5.3",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/packages.config"
+              }
+            ],
+            "description": "NuGet package functionality is included with framework reference",
+            "compatibility": "valid",
+            "recommendedVersion": ""
+          },
+          {
+            "name": "System.Numerics.Vectors",
+            "version": "4.5.0",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/packages.config"
+              }
+            ],
+            "description": "NuGet package functionality is included with framework reference",
+            "compatibility": "valid",
+            "recommendedVersion": ""
+          },
+          {
+            "name": "System.Runtime.CompilerServices.Unsafe",
+            "version": "4.6.0",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/packages.config"
+              }
+            ],
+            "description": "NuGet package upgrade is recommended",
+            "compatibility": "valid",
+            "recommendedVersion": "6.1.2",
+            "upgrade": {
+              "newVersion": "6.1.2"
+            }
+          },
+          {
+            "name": "System.Text.Encodings.Web",
+            "version": "4.6.0",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/packages.config"
+              }
+            ],
+            "description": "NuGet package upgrade is recommended",
+            "compatibility": "valid",
+            "recommendedVersion": "10.0.9",
+            "upgrade": {
+              "newVersion": "10.0.9"
+            }
+          },
+          {
+            "name": "System.Text.Json",
+            "version": "4.6.0",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/packages.config"
+              }
+            ],
+            "description": "NuGet package upgrade is recommended",
+            "compatibility": "valid",
+            "recommendedVersion": "10.0.9",
+            "upgrade": {
+              "newVersion": "10.0.9"
+            }
+          },
+          {
+            "name": "System.Threading.Tasks.Extensions",
+            "version": "4.5.2",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/packages.config"
+              }
+            ],
+            "description": "NuGet package functionality is included with framework reference",
+            "compatibility": "valid",
+            "recommendedVersion": ""
+          },
+          {
+            "name": "System.ValueTuple",
+            "version": "4.5.0",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/packages.config"
+              }
+            ],
+            "description": "NuGet package functionality is included with framework reference",
+            "compatibility": "valid",
+            "recommendedVersion": ""
+          }
+        ],
+        "assemblies": [
+          {
+            "name": "Azure.Core",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "physicalPath": "packages/Azure.Core.1.4.1/lib/netstandard2.0/Azure.Core.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Azure.Search.Documents",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "physicalPath": "packages/Azure.Search.Documents.11.1.1/lib/netstandard2.0/Azure.Search.Documents.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "BingGeocoder",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "physicalPath": "packages/BingGeocodingHelper.1.1/lib/BingGeocoder.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Bcl.AsyncInterfaces",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "physicalPath": "packages/Microsoft.Bcl.AsyncInterfaces.1.0.0/lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.CSharp",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Rest.ClientRuntime",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "physicalPath": "packages/Microsoft.Rest.ClientRuntime.2.3.20/lib/net461/Microsoft.Rest.ClientRuntime.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Rest.ClientRuntime.Azure",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "physicalPath": "packages/Microsoft.Rest.ClientRuntime.Azure.3.3.18/lib/net452/Microsoft.Rest.ClientRuntime.Azure.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Spatial",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "physicalPath": "packages/Microsoft.Spatial.7.5.3/lib/portable-net45\u002Bwin8\u002Bwpa81/Microsoft.Spatial.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Newtonsoft.Json",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "physicalPath": "packages/Newtonsoft.Json.10.0.3/lib/net45/Newtonsoft.Json.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Buffers",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "physicalPath": "packages/System.Buffers.4.5.0/lib/netstandard2.0/System.Buffers.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Data.DataSetExtensions",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Diagnostics.DiagnosticSource",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "physicalPath": "packages/System.Diagnostics.DiagnosticSource.4.6.0/lib/net46/System.Diagnostics.DiagnosticSource.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Memory",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "physicalPath": "packages/System.Memory.4.5.3/lib/netstandard2.0/System.Memory.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Net",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Net.Http",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Net.Http.WebRequest",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Numerics",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Numerics.Vectors",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "physicalPath": "packages/System.Numerics.Vectors.4.5.0/lib/net46/System.Numerics.Vectors.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Runtime",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Runtime.CompilerServices.Unsafe",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "physicalPath": "packages/System.Runtime.CompilerServices.Unsafe.4.6.0/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Runtime.Serialization",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Text.Encodings.Web",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "physicalPath": "packages/System.Text.Encodings.Web.4.6.0/lib/netstandard2.0/System.Text.Encodings.Web.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Text.Json",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "physicalPath": "packages/System.Text.Json.4.6.0/lib/net461/System.Text.Json.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Threading.Tasks.Extensions",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "physicalPath": "packages/System.Threading.Tasks.Extensions.4.5.2/lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.ValueTuple",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "physicalPath": "packages/System.ValueTuple.4.5.0/lib/net47/System.ValueTuple.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Web.DynamicData",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Web.Entity",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Web.ApplicationServices",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.ComponentModel.DataAnnotations",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Data",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Web.Extensions",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Web.Helpers",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "physicalPath": "packages/Microsoft.AspNet.WebPages.3.2.2/lib/net45/System.Web.Helpers.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Web.Mvc",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "physicalPath": "packages/Microsoft.AspNet.Mvc.5.2.2/lib/net45/System.Web.Mvc.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Web.Razor",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "physicalPath": "packages/Microsoft.AspNet.Razor.3.2.2/lib/net45/System.Web.Razor.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Web.WebPages",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "physicalPath": "packages/Microsoft.AspNet.WebPages.3.2.2/lib/net45/System.Web.WebPages.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Web.WebPages.Deployment",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "physicalPath": "packages/Microsoft.AspNet.WebPages.3.2.2/lib/net45/System.Web.WebPages.Deployment.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Web.WebPages.Razor",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "physicalPath": "packages/Microsoft.AspNet.WebPages.3.2.2/lib/net45/System.Web.WebPages.Razor.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Drawing",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Web",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Xml",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Configuration",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Web.Services",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.EnterpriseServices",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Xml.Linq",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Web.Infrastructure",
+            "version": "",
+            "isTransitive": false,
+            "definedIn": [
+              {
+                "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+              }
+            ],
+            "physicalPath": "packages/Microsoft.Web.Infrastructure.1.0.0.0/lib/net40/Microsoft.Web.Infrastructure.dll",
+            "compatibility": "valid"
+          }
+        ],
+        "projectReferences": [],
+        "frameworkReferences": []
+      }
+    }
+  ]
+}

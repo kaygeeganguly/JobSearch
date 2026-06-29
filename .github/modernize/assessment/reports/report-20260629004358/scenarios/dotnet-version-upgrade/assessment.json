@@ -1,0 +1,718 @@
+{
+  "settings": {
+    "components": {
+      "code": true,
+      "binaries": false
+    },
+    "targetId": "net10.0",
+    "targetDisplayName": ".NETCoreApp,Version=v10.0"
+  },
+  "analysisStartTime": "2026-06-29T00:50:43.5268881Z",
+  "analysisEndTime": "2026-06-29T00:50:44.9647437Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 1,
+      "issues": 7,
+      "incidents": 25,
+      "effort": 25
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 12,
+        "Optional": 7,
+        "Potential": 6,
+        "Information": 0
+      },
+      "category": {
+        "NuGet": 22,
+        "Project": 2,
+        "Feature": 1
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "NYCJobsWeb/NYCJobsWeb.csproj",
+      "startingProject": true,
+      "issues": 7,
+      "storyPoints": 25,
+      "properties": {
+        "appName": "NYCJobsWeb",
+        "projectKind": "ClassicClassLibrary",
+        "frameworks": [
+          "net472"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": false,
+        "numberOfFiles": 75,
+        "numberOfCodeFiles": 10,
+        "linesTotal": 323,
+        "linesOfCode": 197,
+        "totalApiScanned": 0,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "8ebb9f16-2d00-4d80-8e94-470554f133b2",
+          "ruleId": "NuGet.0003",
+          "projectPath": "NYCJobsWeb/NYCJobsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.Mvc, 5.2.2\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "Microsoft.AspNet.Mvc, 5.2.2\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "NYCJobsWeb/NYCJobsWeb.csproj",
+            "snippet": "Microsoft.AspNet.Mvc, 5.2.2\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "Microsoft.AspNet.Mvc, 5.2.2\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "Microsoft.AspNet.Mvc 5.2.2",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.Mvc",
+              "PackageVersion": "5.2.2",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "f361596e-c1e3-412b-8300-b9471c291226",
+          "ruleId": "NuGet.0003",
+          "projectPath": "NYCJobsWeb/NYCJobsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.Razor, 3.2.2\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "Microsoft.AspNet.Razor, 3.2.2\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "NYCJobsWeb/NYCJobsWeb.csproj",
+            "snippet": "Microsoft.AspNet.Razor, 3.2.2\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "Microsoft.AspNet.Razor, 3.2.2\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "Microsoft.AspNet.Razor 3.2.2",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.Razor",
+              "PackageVersion": "3.2.2",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "032065ff-1c7c-4e14-81d6-255617317adf",
+          "ruleId": "NuGet.0003",
+          "projectPath": "NYCJobsWeb/NYCJobsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.WebPages, 3.2.2\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "Microsoft.AspNet.WebPages, 3.2.2\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "NYCJobsWeb/NYCJobsWeb.csproj",
+            "snippet": "Microsoft.AspNet.WebPages, 3.2.2\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "Microsoft.AspNet.WebPages, 3.2.2\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "Microsoft.AspNet.WebPages 3.2.2",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.WebPages",
+              "PackageVersion": "3.2.2",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "3b95572e-d706-4277-b1fa-6d6e97aee8a4",
+          "ruleId": "NuGet.0002",
+          "projectPath": "NYCJobsWeb/NYCJobsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Bcl.AsyncInterfaces, 1.0.0\n\nRecommendation:\n\nRemove Microsoft.Bcl.AsyncInterfaces, and replace with new package Microsoft.Bcl.AsyncInterfaces 10.0.9",
+              "protected": "Microsoft.Bcl.AsyncInterfaces, 1.0.0\n\nRecommendation:\n\nRemove Microsoft.Bcl.AsyncInterfaces, and replace with new package Microsoft.Bcl.AsyncInterfaces 10.0.9"
+            },
+            "kind": "File",
+            "path": "NYCJobsWeb/NYCJobsWeb.csproj",
+            "snippet": "Microsoft.Bcl.AsyncInterfaces, 1.0.0\n\nRecommendation:\n\nRemove Microsoft.Bcl.AsyncInterfaces, and replace with new package Microsoft.Bcl.AsyncInterfaces 10.0.9",
+            "protectedSnippet": "Microsoft.Bcl.AsyncInterfaces, 1.0.0\n\nRecommendation:\n\nRemove Microsoft.Bcl.AsyncInterfaces, and replace with new package Microsoft.Bcl.AsyncInterfaces 10.0.9",
+            "label": "Microsoft.Bcl.AsyncInterfaces 1.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Bcl.AsyncInterfaces",
+              "PackageVersion": "1.0.0",
+              "PackageNewVersion": "10.0.9",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "a40f487b-1d48-4422-b0a1-8d3ccc87d6d9",
+          "ruleId": "NuGet.0003",
+          "projectPath": "NYCJobsWeb/NYCJobsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Web.Infrastructure, 1.0.0.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "Microsoft.Web.Infrastructure, 1.0.0.0\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "NYCJobsWeb/NYCJobsWeb.csproj",
+            "snippet": "Microsoft.Web.Infrastructure, 1.0.0.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "Microsoft.Web.Infrastructure, 1.0.0.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "Microsoft.Web.Infrastructure 1.0.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Web.Infrastructure",
+              "PackageVersion": "1.0.0.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "5abee69f-1829-4d87-aa12-4fbb7cb1ddce",
+          "ruleId": "NuGet.0002",
+          "projectPath": "NYCJobsWeb/NYCJobsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Newtonsoft.Json, 10.0.3\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4",
+              "protected": "Newtonsoft.Json, 10.0.3\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4"
+            },
+            "kind": "File",
+            "path": "NYCJobsWeb/NYCJobsWeb.csproj",
+            "snippet": "Newtonsoft.Json, 10.0.3\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4",
+            "protectedSnippet": "Newtonsoft.Json, 10.0.3\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4",
+            "label": "Newtonsoft.Json 10.0.3",
+            "properties": {
+              "PackageId": "Newtonsoft.Json",
+              "PackageVersion": "10.0.3",
+              "PackageNewVersion": "13.0.4",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "6aff350b-8a9f-4b5a-8c11-629993c248f7",
+          "ruleId": "NuGet.0003",
+          "projectPath": "NYCJobsWeb/NYCJobsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Buffers, 4.5.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "System.Buffers, 4.5.0\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "NYCJobsWeb/NYCJobsWeb.csproj",
+            "snippet": "System.Buffers, 4.5.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "System.Buffers, 4.5.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "System.Buffers 4.5.0",
+            "properties": {
+              "PackageId": "System.Buffers",
+              "PackageVersion": "4.5.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "89d8efb0-fc57-413f-bdd9-d9352b7c206e",
+          "ruleId": "NuGet.0002",
+          "projectPath": "NYCJobsWeb/NYCJobsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Diagnostics.DiagnosticSource, 4.6.0\n\nRecommendation:\n\nRemove System.Diagnostics.DiagnosticSource, and replace with new package System.Diagnostics.DiagnosticSource 10.0.9",
+              "protected": "System.Diagnostics.DiagnosticSource, 4.6.0\n\nRecommendation:\n\nRemove System.Diagnostics.DiagnosticSource, and replace with new package System.Diagnostics.DiagnosticSource 10.0.9"
+            },
+            "kind": "File",
+            "path": "NYCJobsWeb/NYCJobsWeb.csproj",
+            "snippet": "System.Diagnostics.DiagnosticSource, 4.6.0\n\nRecommendation:\n\nRemove System.Diagnostics.DiagnosticSource, and replace with new package System.Diagnostics.DiagnosticSource 10.0.9",
+            "protectedSnippet": "System.Diagnostics.DiagnosticSource, 4.6.0\n\nRecommendation:\n\nRemove System.Diagnostics.DiagnosticSource, and replace with new package System.Diagnostics.DiagnosticSource 10.0.9",
+            "label": "System.Diagnostics.DiagnosticSource 4.6.0",
+            "properties": {
+              "PackageId": "System.Diagnostics.DiagnosticSource",
+              "PackageVersion": "4.6.0",
+              "PackageNewVersion": "10.0.9",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "01fcebc6-ed3a-4076-83e8-cd814196f831",
+          "ruleId": "NuGet.0003",
+          "projectPath": "NYCJobsWeb/NYCJobsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Memory, 4.5.3\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "System.Memory, 4.5.3\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "NYCJobsWeb/NYCJobsWeb.csproj",
+            "snippet": "System.Memory, 4.5.3\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "System.Memory, 4.5.3\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "System.Memory 4.5.3",
+            "properties": {
+              "PackageId": "System.Memory",
+              "PackageVersion": "4.5.3",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "60c31666-a842-4d56-9a32-4d14cb0e98e7",
+          "ruleId": "NuGet.0003",
+          "projectPath": "NYCJobsWeb/NYCJobsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Numerics.Vectors, 4.5.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "System.Numerics.Vectors, 4.5.0\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "NYCJobsWeb/NYCJobsWeb.csproj",
+            "snippet": "System.Numerics.Vectors, 4.5.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "System.Numerics.Vectors, 4.5.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "System.Numerics.Vectors 4.5.0",
+            "properties": {
+              "PackageId": "System.Numerics.Vectors",
+              "PackageVersion": "4.5.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "9f58be28-9324-430e-8697-bd3414c5d39a",
+          "ruleId": "NuGet.0002",
+          "projectPath": "NYCJobsWeb/NYCJobsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Runtime.CompilerServices.Unsafe, 4.6.0\n\nRecommendation:\n\nRemove System.Runtime.CompilerServices.Unsafe, and replace with new package System.Runtime.CompilerServices.Unsafe 6.1.2",
+              "protected": "System.Runtime.CompilerServices.Unsafe, 4.6.0\n\nRecommendation:\n\nRemove System.Runtime.CompilerServices.Unsafe, and replace with new package System.Runtime.CompilerServices.Unsafe 6.1.2"
+            },
+            "kind": "File",
+            "path": "NYCJobsWeb/NYCJobsWeb.csproj",
+            "snippet": "System.Runtime.CompilerServices.Unsafe, 4.6.0\n\nRecommendation:\n\nRemove System.Runtime.CompilerServices.Unsafe, and replace with new package System.Runtime.CompilerServices.Unsafe 6.1.2",
+            "protectedSnippet": "System.Runtime.CompilerServices.Unsafe, 4.6.0\n\nRecommendation:\n\nRemove System.Runtime.CompilerServices.Unsafe, and replace with new package System.Runtime.CompilerServices.Unsafe 6.1.2",
+            "label": "System.Runtime.CompilerServices.Unsafe 4.6.0",
+            "properties": {
+              "PackageId": "System.Runtime.CompilerServices.Unsafe",
+              "PackageVersion": "4.6.0",
+              "PackageNewVersion": "6.1.2",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "12ae7591-cc99-48c0-8f73-7bded105af1c",
+          "ruleId": "NuGet.0002",
+          "projectPath": "NYCJobsWeb/NYCJobsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Text.Encodings.Web, 4.6.0\n\nRecommendation:\n\nRemove System.Text.Encodings.Web, and replace with new package System.Text.Encodings.Web 10.0.9",
+              "protected": "System.Text.Encodings.Web, 4.6.0\n\nRecommendation:\n\nRemove System.Text.Encodings.Web, and replace with new package System.Text.Encodings.Web 10.0.9"
+            },
+            "kind": "File",
+            "path": "NYCJobsWeb/NYCJobsWeb.csproj",
+            "snippet": "System.Text.Encodings.Web, 4.6.0\n\nRecommendation:\n\nRemove System.Text.Encodings.Web, and replace with new package System.Text.Encodings.Web 10.0.9",
+            "protectedSnippet": "System.Text.Encodings.Web, 4.6.0\n\nRecommendation:\n\nRemove System.Text.Encodings.Web, and replace with new package System.Text.Encodings.Web 10.0.9",
+            "label": "System.Text.Encodings.Web 4.6.0",
+            "properties": {
+              "PackageId": "System.Text.Encodings.Web",
+              "PackageVersion": "4.6.0",
+              "PackageNewVersion": "10.0.9",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "85646acc-f975-4b26-bebd-8c242c791a5f",
+          "ruleId": "NuGet.0002",
+          "projectPath": "NYCJobsWeb/NYCJobsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Text.Json, 4.6.0\n\nRecommendation:\n\nRemove System.Text.Json, and replace with new package System.Text.Json 10.0.9",
+              "protected": "System.Text.Json, 4.6.0\n\nRecommendation:\n\nRemove System.Text.Json, and replace with new package System.Text.Json 10.0.9"
+            },
+            "kind": "File",
+            "path": "NYCJobsWeb/NYCJobsWeb.csproj",
+            "snippet": "System.Text.Json, 4.6.0\n\nRecommendation:\n\nRemove System.Text.Json, and replace with new package System.Text.Json 10.0.9",
+            "protectedSnippet": "System.Text.Json, 4.6.0\n\nRecommendation:\n\nRemove System.Text.Json, and replace with new package System.Text.Json 10.0.9",
+            "label": "System.Text.Json 4.6.0",
+            "properties": {
+              "PackageId": "System.Text.Json",
+              "PackageVersion": "4.6.0",
+              "PackageNewVersion": "10.0.9",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "c3efd0f8-6bee-441c-bdd4-0c322d9bb774",
+          "ruleId": "NuGet.0003",
+          "projectPath": "NYCJobsWeb/NYCJobsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Threading.Tasks.Extensions, 4.5.2\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "System.Threading.Tasks.Extensions, 4.5.2\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "NYCJobsWeb/NYCJobsWeb.csproj",
+            "snippet": "System.Threading.Tasks.Extensions, 4.5.2\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "System.Threading.Tasks.Extensions, 4.5.2\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "System.Threading.Tasks.Extensions 4.5.2",
+            "properties": {
+              "PackageId": "System.Threading.Tasks.Extensions",
+              "PackageVersion": "4.5.2",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "4f5eb80b-9183-43ab-ada1-824b7065c20f",
+          "ruleId": "NuGet.0003",
+          "projectPath": "NYCJobsWeb/NYCJobsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.ValueTuple, 4.5.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "System.ValueTuple, 4.5.0\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "NYCJobsWeb/NYCJobsWeb.csproj",
+            "snippet": "System.ValueTuple, 4.5.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "System.ValueTuple, 4.5.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "System.ValueTuple 4.5.0",
+            "properties": {
+              "PackageId": "System.ValueTuple",
+              "PackageVersion": "4.5.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "87862bd7-a60d-4fce-9235-1fce5bf8b957",
+          "ruleId": "NuGet.0004",
+          "projectPath": "NYCJobsWeb/NYCJobsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "jQuery, 3.1.1\n\nRecommendation:\n\njQuery, 3.7.1",
+              "protected": "jQuery, 3.1.1\n\nRecommendation:\n\njQuery, 3.7.1"
+            },
+            "kind": "File",
+            "path": "NYCJobsWeb/NYCJobsWeb.csproj",
+            "snippet": "jQuery, 3.1.1\n\nRecommendation:\n\njQuery, 3.7.1",
+            "protectedSnippet": "jQuery, 3.1.1\n\nRecommendation:\n\njQuery, 3.7.1",
+            "label": "jQuery 3.1.1",
+            "properties": {
+              "PackageId": "jQuery",
+              "PackageVersion": "3.1.1",
+              "PackageNewVersion": "3.7.1",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "f8ef1b4d-f152-4cbf-bf01-e3b42ebd7e38",
+          "ruleId": "NuGet.0004",
+          "projectPath": "NYCJobsWeb/NYCJobsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Rest.ClientRuntime, 2.3.20\n\nRecommendation:\n\nMicrosoft.Rest.ClientRuntime, 2.3.24",
+              "protected": "Microsoft.Rest.ClientRuntime, 2.3.20\n\nRecommendation:\n\nMicrosoft.Rest.ClientRuntime, 2.3.24"
+            },
+            "kind": "File",
+            "path": "NYCJobsWeb/NYCJobsWeb.csproj",
+            "snippet": "Microsoft.Rest.ClientRuntime, 2.3.20\n\nRecommendation:\n\nMicrosoft.Rest.ClientRuntime, 2.3.24",
+            "protectedSnippet": "Microsoft.Rest.ClientRuntime, 2.3.20\n\nRecommendation:\n\nMicrosoft.Rest.ClientRuntime, 2.3.24",
+            "label": "Microsoft.Rest.ClientRuntime 2.3.20",
+            "properties": {
+              "PackageId": "Microsoft.Rest.ClientRuntime",
+              "PackageVersion": "2.3.20",
+              "PackageNewVersion": "2.3.24",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "47ff664c-ea26-4630-bac2-9ba56374db30",
+          "ruleId": "NuGet.0005",
+          "projectPath": "NYCJobsWeb/NYCJobsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Rest.ClientRuntime, 2.3.20\n\nRecommendation:\n\nThank you for the interest in this package.\n\nThe replacement package is available https://www.nuget.org/packages/Azure.Core/, you can find more information of this new package from https://learn.microsoft.com/en-us/dotnet/api/overview/azure/core-readme?view=azure-dotnet.\n\nThis package is no longer maintained.\nRemove Microsoft.Rest.ClientRuntime, and replace with new package Microsoft.Rest.ClientRuntime, 2.3.24",
+              "protected": "Microsoft.Rest.ClientRuntime, 2.3.20\n\nRecommendation:\n\nThank you for the interest in this package.\n\nThe replacement package is available https://www.nuget.org/packages/Azure.Core/, you can find more information of this new package from https://learn.microsoft.com/en-us/dotnet/api/overview/azure/core-readme?view=azure-dotnet.\n\nThis package is no longer maintained.\nRemove Microsoft.Rest.ClientRuntime, and replace with new package Microsoft.Rest.ClientRuntime, 2.3.24"
+            },
+            "kind": "File",
+            "path": "NYCJobsWeb/NYCJobsWeb.csproj",
+            "snippet": "Microsoft.Rest.ClientRuntime, 2.3.20\n\nRecommendation:\n\nThank you for the interest in this package.\n\nThe replacement package is available https://www.nuget.org/packages/Azure.Core/, you can find more information of this new package from https://learn.microsoft.com/en-us/dotnet/api/overview/azure/core-readme?view=azure-dotnet.\n\nThis package is no longer maintained.\nRemove Microsoft.Rest.ClientRuntime, and replace with new package Microsoft.Rest.ClientRuntime, 2.3.24",
+            "protectedSnippet": "Microsoft.Rest.ClientRuntime, 2.3.20\n\nRecommendation:\n\nThank you for the interest in this package.\n\nThe replacement package is available https://www.nuget.org/packages/Azure.Core/, you can find more information of this new package from https://learn.microsoft.com/en-us/dotnet/api/overview/azure/core-readme?view=azure-dotnet.\n\nThis package is no longer maintained.\nRemove Microsoft.Rest.ClientRuntime, and replace with new package Microsoft.Rest.ClientRuntime, 2.3.24",
+            "label": "Microsoft.Rest.ClientRuntime 2.3.20",
+            "properties": {
+              "PackageId": "Microsoft.Rest.ClientRuntime",
+              "PackageVersion": "2.3.20",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "8631f894-780d-435d-b0d6-9148cbf5666d",
+          "ruleId": "NuGet.0005",
+          "projectPath": "NYCJobsWeb/NYCJobsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Rest.ClientRuntime.Azure, 3.3.18\n\nRecommendation:\n\nThank you for the interest in this package.\n\nThe replacement package is available https://www.nuget.org/packages/Azure.Core/, you can find more information of this new package from https://learn.microsoft.com/en-us/dotnet/api/overview/azure/core-readme?view=azure-dotnet.\n\nThis package is no longer maintained.\nRemove Microsoft.Rest.ClientRuntime.Azure, and replace with new package Microsoft.Rest.ClientRuntime.Azure, 3.3.19",
+              "protected": "Microsoft.Rest.ClientRuntime.Azure, 3.3.18\n\nRecommendation:\n\nThank you for the interest in this package.\n\nThe replacement package is available https://www.nuget.org/packages/Azure.Core/, you can find more information of this new package from https://learn.microsoft.com/en-us/dotnet/api/overview/azure/core-readme?view=azure-dotnet.\n\nThis package is no longer maintained.\nRemove Microsoft.Rest.ClientRuntime.Azure, and replace with new package Microsoft.Rest.ClientRuntime.Azure, 3.3.19"
+            },
+            "kind": "File",
+            "path": "NYCJobsWeb/NYCJobsWeb.csproj",
+            "snippet": "Microsoft.Rest.ClientRuntime.Azure, 3.3.18\n\nRecommendation:\n\nThank you for the interest in this package.\n\nThe replacement package is available https://www.nuget.org/packages/Azure.Core/, you can find more information of this new package from https://learn.microsoft.com/en-us/dotnet/api/overview/azure/core-readme?view=azure-dotnet.\n\nThis package is no longer maintained.\nRemove Microsoft.Rest.ClientRuntime.Azure, and replace with new package Microsoft.Rest.ClientRuntime.Azure, 3.3.19",
+            "protectedSnippet": "Microsoft.Rest.ClientRuntime.Azure, 3.3.18\n\nRecommendation:\n\nThank you for the interest in this package.\n\nThe replacement package is available https://www.nuget.org/packages/Azure.Core/, you can find more information of this new package from https://learn.microsoft.com/en-us/dotnet/api/overview/azure/core-readme?view=azure-dotnet.\n\nThis package is no longer maintained.\nRemove Microsoft.Rest.ClientRuntime.Azure, and replace with new package Microsoft.Rest.ClientRuntime.Azure, 3.3.19",
+            "label": "Microsoft.Rest.ClientRuntime.Azure 3.3.18",
+            "properties": {
+              "PackageId": "Microsoft.Rest.ClientRuntime.Azure",
+              "PackageVersion": "3.3.18",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "87d4d848-c5b5-4e8f-81af-10f686d46c64",
+          "ruleId": "NuGet.0004",
+          "projectPath": "NYCJobsWeb/NYCJobsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Newtonsoft.Json, 10.0.3\n\nRecommendation:\n\nNewtonsoft.Json, 13.0.4",
+              "protected": "Newtonsoft.Json, 10.0.3\n\nRecommendation:\n\nNewtonsoft.Json, 13.0.4"
+            },
+            "kind": "File",
+            "path": "NYCJobsWeb/NYCJobsWeb.csproj",
+            "snippet": "Newtonsoft.Json, 10.0.3\n\nRecommendation:\n\nNewtonsoft.Json, 13.0.4",
+            "protectedSnippet": "Newtonsoft.Json, 10.0.3\n\nRecommendation:\n\nNewtonsoft.Json, 13.0.4",
+            "label": "Newtonsoft.Json 10.0.3",
+            "properties": {
+              "PackageId": "Newtonsoft.Json",
+              "PackageVersion": "10.0.3",
+              "PackageNewVersion": "13.0.4",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "e999d10a-edb7-4cb5-9520-71e8c4ec5084",
+          "ruleId": "NuGet.0004",
+          "projectPath": "NYCJobsWeb/NYCJobsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Text.Encodings.Web, 4.6.0\n\nRecommendation:\n\nSystem.Text.Encodings.Web, 10.0.9",
+              "protected": "System.Text.Encodings.Web, 4.6.0\n\nRecommendation:\n\nSystem.Text.Encodings.Web, 10.0.9"
+            },
+            "kind": "File",
+            "path": "NYCJobsWeb/NYCJobsWeb.csproj",
+            "snippet": "System.Text.Encodings.Web, 4.6.0\n\nRecommendation:\n\nSystem.Text.Encodings.Web, 10.0.9",
+            "protectedSnippet": "System.Text.Encodings.Web, 4.6.0\n\nRecommendation:\n\nSystem.Text.Encodings.Web, 10.0.9",
+            "label": "System.Text.Encodings.Web 4.6.0",
+            "properties": {
+              "PackageId": "System.Text.Encodings.Web",
+              "PackageVersion": "4.6.0",
+              "PackageNewVersion": "10.0.9",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "5abc971e-2c1b-48eb-8077-4aa2d025e7d6",
+          "ruleId": "NuGet.0005",
+          "projectPath": "NYCJobsWeb/NYCJobsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Text.Json, 4.6.0\n\nRecommendation:\n\nVersions targeting out-of-support .NET versions\nRemove System.Text.Json, and replace with new package System.Text.Json, 10.0.9",
+              "protected": "System.Text.Json, 4.6.0\n\nRecommendation:\n\nVersions targeting out-of-support .NET versions\nRemove System.Text.Json, and replace with new package System.Text.Json, 10.0.9"
+            },
+            "kind": "File",
+            "path": "NYCJobsWeb/NYCJobsWeb.csproj",
+            "snippet": "System.Text.Json, 4.6.0\n\nRecommendation:\n\nVersions targeting out-of-support .NET versions\nRemove System.Text.Json, and replace with new package System.Text.Json, 10.0.9",
+            "protectedSnippet": "System.Text.Json, 4.6.0\n\nRecommendation:\n\nVersions targeting out-of-support .NET versions\nRemove System.Text.Json, and replace with new package System.Text.Json, 10.0.9",
+            "label": "System.Text.Json 4.6.0",
+            "properties": {
+              "PackageId": "System.Text.Json",
+              "PackageVersion": "4.6.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "5c20847f-bca4-400d-a5d2-674e27c33c07",
+          "ruleId": "Project.0001",
+          "projectPath": "NYCJobsWeb/NYCJobsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "NYCJobsWeb/NYCJobsWeb.csproj"
+          }
+        },
+        {
+          "incidentId": "536251e4-f31c-49f3-afde-3f56f93eb918",
+          "ruleId": "Project.0002",
+          "projectPath": "NYCJobsWeb/NYCJobsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: .NETFramework,Version=v4.7.2\nRecommended target framework: net10.0",
+              "protected": "Current target framework: .NETFramework,Version=v4.7.2\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "NYCJobsWeb/NYCJobsWeb.csproj",
+            "snippet": "Current target framework: .NETFramework,Version=v4.7.2\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: .NETFramework,Version=v4.7.2\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": ".NETFramework,Version=v4.7.2",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        },
+        {
+          "incidentId": "80efd8bb-8bf8-47b8-a613-b13da32c4348",
+          "ruleId": "Feature.1000",
+          "projectPath": "NYCJobsWeb/NYCJobsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "NYCJobsWeb/Global.asax.cs"
+          }
+        }
+      ],
+      "features": []
+    }
+  ],
+  "rules": {
+    "NuGet.0003": {
+      "id": "NuGet.0003",
+      "isFeature": false,
+      "description": "NuGet package functionality is included with framework reference.\n\nPackage needs to be removed.",
+      "label": "NuGet package functionality is included with framework reference",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262609",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0002": {
+      "id": "NuGet.0002",
+      "isFeature": false,
+      "description": "NuGet package upgrade is recommended for selected target framework.\n\nStandard .NET packages are recommended to have versions matching version of .NET that project targets.\n\nSome other packages also are known to work better for selected target frameworks.",
+      "label": "NuGet package upgrade is recommended",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262530",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0004": {
+      "id": "NuGet.0004",
+      "isFeature": false,
+      "description": "NuGet package contains security vulnerabilities.\n\nPackage needs to be upgraded to a newer version that addresses known security vulnerabilities.",
+      "label": "NuGet package contains security vulnerability",
+      "severity": "Optional",
+      "effort": 1
+    },
+    "NuGet.0005": {
+      "id": "NuGet.0005",
+      "isFeature": false,
+      "description": "NuGet package is deprecated.\n\nGo to its documentation and if there is a guidance for replacement of functionality provided by this package.",
+      "label": "NuGet package is deprecated",
+      "severity": "Optional",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262531",
+          "isCustom": false
+        }
+      ]
+    },
+    "Project.0001": {
+      "id": "Project.0001",
+      "isFeature": false,
+      "description": "Project file needs to be converted to SDK-style. Modern .NET framework projects require a change in the project file format and use SDK corresponding to project flavor and functionality.",
+      "label": "Project file needs to be converted to SDK-style",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Project.0002": {
+      "id": "Project.0002",
+      "isFeature": false,
+      "description": "Project\u0027s target framework(s) needs to be changed to the new target framework that you selected for this upgrade.\n\nDuring upgrade target framework will be adjusted to corresponding platform when applicable. In some cases project would result in multiple target frameworks after the upgrade if it was using features that now have their own platforms in modern .NET frameworks (windows, iOS, Android etc).",
+      "label": "Project\u0027s target framework(s) needs to be changed",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Feature.1000": {
+      "id": "Feature.1000",
+      "isFeature": true,
+      "description": "Convert application initialization code from Global.asax.cs to .NET Core and clean up Global.asax.cs.",
+      "label": "Convert application initialization code from Global.asax.cs to .NET Core and clean up Global.asax.cs",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        }
+      ]
+    }
+  }
+}
