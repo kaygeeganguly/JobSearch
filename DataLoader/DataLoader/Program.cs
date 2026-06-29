@@ -1,7 +1,8 @@
-﻿// This is a prototype tool that allows for import of sample data to an Azure Search index
+// This is a prototype tool that allows for import of sample data to an Azure Search index
 
 using System;
 using System.Configuration;
+using System.Globalization;
 using System.IO;
 using System.Net.Http;
 
@@ -9,8 +10,8 @@ namespace AzureSearchBackupRestore
 {
     class Program
     {
-        private static string TargetSearchServiceName = ConfigurationManager.AppSettings["TargetSearchServiceName"];
-        private static string TargetSearchServiceApiKey = ConfigurationManager.AppSettings["TargetSearchServiceApiKey"];
+        private static readonly string TargetSearchServiceName = ConfigurationManager.AppSettings["TargetSearchServiceName"];
+        private static readonly string TargetSearchServiceApiKey = ConfigurationManager.AppSettings["TargetSearchServiceApiKey"];
         private static HttpClient HttpClient;
         private static Uri ServiceUri;
 
@@ -18,11 +19,10 @@ namespace AzureSearchBackupRestore
         {
             try
             {
-                ServiceUri = new Uri("https://" + TargetSearchServiceName + ".search.windows.net");
+                ServiceUri = new Uri($"https://{TargetSearchServiceName}.search.windows.net", UriKind.Absolute);
                 HttpClient = new HttpClient();
                 HttpClient.DefaultRequestHeaders.Add("api-key", TargetSearchServiceApiKey);
 
-                // Re-create and import content to target indexes
                 LaunchImportProcess("zipcodes");
                 LaunchImportProcess("nycjobs");
 
@@ -32,38 +32,36 @@ namespace AzureSearchBackupRestore
             catch (Exception ex)
             {
                 Console.WriteLine("Error: {0}", ex.Message);
-                Console.WriteLine("Did you remember to set your TArgetSearchServiceName and TargetSearchServiceApiKey in the app.config?\r\n");
+                Console.WriteLine("Did you remember to set your TargetSearchServiceName and TargetSearchServiceApiKey in the app.config?\r\n");
             }
+
             Console.ReadLine();
         }
 
-        private static void LaunchImportProcess(string IndexName)
+        private static void LaunchImportProcess(string indexName)
         {
-            // Re-create and import content to target index
-            Console.WriteLine("Deleting " + IndexName + " index...");
-            DeleteIndex(IndexName);
-            Console.WriteLine("Creating " + IndexName + " index...");
-            CreateTargetIndex(IndexName);
-            Console.WriteLine("Uploading data to " + IndexName + "...");
-            ImportFromJSON(IndexName);
+            Console.WriteLine("Deleting " + indexName + " index...");
+            DeleteIndex(indexName);
+            Console.WriteLine("Creating " + indexName + " index...");
+            CreateTargetIndex(indexName);
+            Console.WriteLine("Uploading data to " + indexName + "...");
+            ImportFromJson(indexName);
         }
 
-        private static void DeleteIndex(string IndexName)
+        private static void DeleteIndex(string indexName)
         {
-            // Delete the index if it exists
             try
             {
                 try
                 {
-                    Uri uri = new Uri(ServiceUri, "/indexes/" + IndexName);
+                    Uri uri = new Uri(ServiceUri, "/indexes/" + indexName);
                     HttpResponseMessage response = AzureSearchHelper.SendSearchRequest(HttpClient, HttpMethod.Delete, uri);
                     response.EnsureSuccessStatusCode();
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine("Error: {0}", ex.Message.ToString());
+                    Console.WriteLine("Error: {0}", ex.Message);
                 }
-
             }
             catch (Exception ex)
             {
@@ -71,11 +69,9 @@ namespace AzureSearchBackupRestore
             }
         }
 
-        static void CreateTargetIndex(string IndexName)
+        private static void CreateTargetIndex(string indexName)
         {
-            // Use the schema file to create a copy of this index
-            // I like using REST here since I can just take the response as-is
-            string json = File.ReadAllText("..\\..\\..\\..\\NYCJobsWeb\\Schema_and_Data\\" + IndexName + ".schema");
+            string json = File.ReadAllText(Path.Combine(GetSchemaDataDirectory(), indexName + ".schema"));
             try
             {
                 Uri uri = new Uri(ServiceUri, "/indexes");
@@ -84,29 +80,45 @@ namespace AzureSearchBackupRestore
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error: {0}", ex.Message.ToString());
+                Console.WriteLine("Error: {0}", ex.Message);
             }
-
         }
 
-        static void ImportFromJSON(string IndexName)
+        private static void ImportFromJson(string indexName)
         {
-            // Take JSON file and import this as-is to target index
             try
             {
-                foreach (string fileName in Directory.GetFiles("..\\..\\..\\..\\NYCJobsWeb\\Schema_and_Data\\", IndexName + "*.json"))
+                foreach (string fileName in Directory.GetFiles(GetSchemaDataDirectory(), indexName + "*.json"))
                 {
                     Console.WriteLine("Uploading documents from file {0}", fileName);
                     string json = File.ReadAllText(fileName);
-                    Uri uri = new Uri(ServiceUri, "/indexes/"+ IndexName + "/docs/index");
+                    Uri uri = new Uri(ServiceUri, "/indexes/" + indexName + "/docs/index");
                     HttpResponseMessage response = AzureSearchHelper.SendSearchRequest(HttpClient, HttpMethod.Post, uri, json);
                     response.EnsureSuccessStatusCode();
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error: {0}", ex.Message.ToString());
+                Console.WriteLine("Error: {0}", ex.Message);
             }
+        }
+
+        private static string GetSchemaDataDirectory()
+        {
+            DirectoryInfo currentDirectory = new DirectoryInfo(AppContext.BaseDirectory);
+
+            while (currentDirectory != null)
+            {
+                string candidate = Path.Combine(currentDirectory.FullName, "NYCJobsWeb", "Schema_and_Data");
+                if (Directory.Exists(candidate))
+                {
+                    return candidate;
+                }
+
+                currentDirectory = currentDirectory.Parent;
+            }
+
+            throw new DirectoryNotFoundException("Unable to locate the NYCJobsWeb/Schema_and_Data directory.");
         }
     }
 }

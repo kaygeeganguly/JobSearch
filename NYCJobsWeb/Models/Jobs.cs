@@ -1,8 +1,4 @@
-﻿using Azure.Search.Documents.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using Azure.Search.Documents.Models;
 
 namespace NYCJobsWeb.Models
 {
@@ -17,5 +13,4 @@ namespace NYCJobsWeb.Models
     {
         public SearchDocument Result { get; set; }
     }
-
 }
